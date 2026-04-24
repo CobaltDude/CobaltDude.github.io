@@ -41,23 +41,18 @@
                     <span>EmuStation98</span>
                 </div>
                 <div class="nav-separator"></div>
-                <a class="nav-btn active" href="index.html">Home</a>
+                <a class="nav-btn" href="index.html">Home</a>
                 <a class="nav-btn" href="guides.html">Guides</a>
                 <a class="nav-btn" href="projects.html">Related Projects</a>
-                <a class="nav-btn" href="emulator.html">Emulator</a>
+                <a class="nav-btn active" href="emulator.html">Emulator</a>
                 <a class="nav-btn" href="about.html">About</a>
             </div>
         </header>
 
-        <div class="banner">
-            <h1 class="retro-font">Welcome!</h1>
-        </div>
-
-        <!--Window 1-->
-        <section class="left win-border">
+        <section class="center">
             <div class="window">
                 <div class="title-bar">
-                    <div class="title-bar-text">Intro.js</div>
+                    <div class="title-bar-text">Emulator.xp</div>
                     <div class="title-bar-controls">
                         <button aria-label="Minimize"></button>
                         <button aria-label="Maximize"></button>
@@ -65,40 +60,28 @@
                     </div>
                 </div>
                 <div class="window-body">
-                    <p>A comprehensive guide, both beginner and veteran
-                        friendly, to retro game emulation on modern
-                        hardware.</p>
-                </div>
-            </div>
-
-            <hr>
-
-            <!--Window 2-->
-            <div class="window">
-                <div class="title-bar">
-                    <div class="title-bar-text">Explanation.html</div>
-                    <div class="title-bar-controls">
-                        <button aria-label="Minimize"></button>
-                        <button aria-label="Maximize"></button>
-                        <button aria-label="Close"></button>
-                    </div>
-                </div>
-                <div class="window-body">
-                    <p>The goal of the website is to provide information
-                        relating to retro video game-based emulation. This will
-                        include, but will not be limited to, popular emulators,
-                        safe methods of emulation on all platforms, and popular
-                        projects related to retro game console emulation. The
-                        intention being that any person who has used the website
-                        will leave with enough knowledge and experience to be
-                        able to emulate locally on their own devices, and
-                        understand how it should look when functioning
-                        properly.</p>
+                    <p>Below is a demo of the possibilities of modern emulation.
+                        The rom provided is a fanmade recreation of the popular
+                        game ‘Flappy Bird’, but through the emulation of a
+                        Gameboy Advance on modern computing hardware.</p>
                 </div>
             </div>
         </section>
 
-        <img src="images/Gameboy.png" width="300" height="250" alt="Description of image" class="right">
+        <section>
+                    <div style="width:100%;height:100%;max-width:100%">
+            <div id="game"></div>
+        </div>
+        <script>
+            EJS_player = "#game";
+            EJS_core = "vb";
+            EJS_gameName = "FlappyBird";
+            EJS_color = "#0064ff";
+            EJS_pathtodata = "https://cdn.emulatorjs.org/stable/data/";
+            EJS_gameUrl = "flappybird.gba";
+        </script>
+        <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
+        </section>
 
         <footer>
             <div class="taskbar" style="z-index: 5000;">
@@ -115,7 +98,8 @@
                             src="images/task-scheduler-16x16.png"
                             title="Task Scheduler is not ready."
                             onclick="showMessageBox({iconID: 'info', message: 'Good day to you!'})">
-                        <img class="tray-icon" src="images/audio-okay-16x16.png"
+                        <img class="tray-icon"
+                            src="images/audio-okay-16x16.png"
                             title="Volume"
                             onclick="showMessageBox({iconID: 'info', message: 'Have a wonderful day!'})">
                     </div>
