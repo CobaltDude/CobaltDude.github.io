@@ -1,0 +1,405 @@
+<!DOCTYPE html lang="en">
+<html>
+    <head>
+        <title>Emustation98 - Guides</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css">
+
+        <!--98.css-->
+        <link rel="stylesheet" href="https://unpkg.com/98.css" />
+
+        <!--OS-GUI-->
+        <link rel="stylesheet" type="text/css" href="taskbar/classic.css">
+        <link rel="stylesheet" type="text/css" href="taskbar/layout.css">
+        <link rel="stylesheet" type="text/css" href="taskbar/windows-98.css">
+        <link rel="stylesheet" type="text/css"
+            href="taskbar/windows-default.css">
+
+        <script src="taskbar/$MenuBar.js"></script>
+
+        <!--Google Font Source-->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+
+        <link rel="stylesheet" type="text/css" href="css/tabs.css">
+    </head>
+    <body>
+        <header>
+
+            <!--Title Bar-->
+            <div class="title-bar inactive">
+                <div class="title-bar-text">Emulation.exe</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <!--Navigation-->
+            <div id="win98-nav">
+                <div class="nav-logo">
+                    <div class="pixel-icon">▶</div>
+                    <span>EmuStation98</span>
+                </div>
+                <div class="nav-separator"></div>
+                <a class="nav-btn" href="index.html">Home</a>
+                <a class="nav-btn active" href="guides.html">Guides</a>
+                <a class="nav-btn" href="projects.html">Related Projects</a>
+                <a class="nav-btn" href="emulator.html">Emulator</a>
+                <a class="nav-btn" href="about.html">About</a>
+            </div>
+        </header>
+
+        <div class="banner">
+            <h1 class="retro-font">Emulation Guides.</h1>
+        </div>
+
+        <!--Tab Interface-->
+        <div class="emu-tab-container">
+
+            <!-- Tab list -->
+            <div role="tablist" aria-label="Platform guides">
+                <button role="tab" id="tab-windows"
+                    aria-controls="panel-windows" aria-selected="true"
+                    tabindex="0">
+                    <span class="tab-icon"></span>Windows
+                </button>
+                <button role="tab" id="tab-mac" aria-controls="panel-mac"
+                    aria-selected="false" tabindex="-1">
+                    <span class="tab-icon"></span>Mac
+                </button>
+                <button role="tab" id="tab-linux" aria-controls="panel-linux"
+                    aria-selected="false" tabindex="-1">
+                    <span class="tab-icon"></span>Linux
+                </button>
+                <button role="tab" id="tab-steam" aria-controls="panel-steam"
+                    aria-selected="false" tabindex="-1">
+                    <span class="tab-icon"></span>Steam Deck
+                </button>
+                <button role="tab" id="tab-android"
+                    aria-controls="panel-android" aria-selected="false"
+                    tabindex="-1">
+                    <span class="tab-icon"></span>Android
+                </button>
+            </div>
+
+            <!--Windows Panel-->
+            <div role="tabpanel" id="panel-windows"
+                aria-labelledby="tab-windows">
+                <div class="guide-section">
+                    <h3>Getting Started on Windows</h3>
+                    <p>Windows has the widest emulator support. Most emulators
+                        ship as pre-built <code>.exe</code> files, no
+                        installation required in many cases. <br> All game files
+                        (ROM, iso, etc.) should be obtained through legal
+                        methods, using games you already own.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 1 — Install Visual C++ Redistributables</h3>
+                    <ol>
+                        <li>Download the latest <strong>Microsoft Visual C++
+                                Redistributable</strong> from Microsoft's
+                            official site.</li>
+                        <li>Install both the <code>x64</code> and
+                            <code>x86</code> versions many, emulators require
+                            both.</li>
+                        <li>Restart your PC if prompted.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 2 — Download an Emulator</h3>
+                    <ol>
+                        <li>Choose a system to emulate (e.g. SNES, PS2, GBA) and
+                            find the appropriate emulator.</li>
+                        <li>Always download from the emulator's <strong>official
+                                website or GitHub releases page</strong>.</li>
+                        <li>Extract the <code>.zip</code> or <code>.7z</code>
+                            archive to a permanent folder (e.g.
+                            <code>C:\Emulators\</code>).</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 2 [Alternative] — Download RetroArch</h3>
+                    <ol>
+                        <li>RetroArch is a one size fits all emulator available
+                            on <strong>Steam</strong> and their <a
+                                href="https://www.retroarch.com/">website</a>.</li>
+                        <li>This method is easier, as it removes the requirement
+                            of installing several applications, especially as
+                            the steam installation makes the process as easy as
+                            clicking <strong>install</strong>.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 3 — Configure &amp; Load a ROM</h3>
+                    <ol>
+                        <li>Launch the emulator <code>.exe</code> and open its
+                            Settings or Configuration menu.</li>
+                        <li>Point the emulator to your BIOS folder if required
+                            (e.g. PS2/PS1 need a BIOS dump from your
+                            console).</li>
+                        <li>Use <strong>File → Open ROM</strong> (or equivalent)
+                            to load your game file.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-tip">
+                    Windows Defender may flag emulators as suspicious. If you
+                    trust the source, add the emulator folder to Defender's
+                    exclusion list via <strong>Windows Security → Virus &amp;
+                        threat protection → Exclusions</strong>.
+                </div>
+            </div>
+
+            <!-- Mac Panel -->
+            <div role="tabpanel" id="panel-mac" aria-labelledby="tab-mac"
+                hidden>
+                <div class="guide-section">
+                    <h3>Getting Started on macOS</h3>
+                    <p>macOS support varies. Apple Silicon (M1/M2/M3) Macs run
+                        emulators natively or via Rosetta 2. Most emulators are
+                        distributed as <code>.dmg</code> or <code>.app</code>
+                        bundles.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 1 — Allow Apps from Unidentified Developers</h3>
+                    <ol>
+                        <li>Open <strong>System Settings → Privacy &amp;
+                                Security</strong>.</li>
+                        <li>Under <em>Security</em>, set <em>Allow apps
+                                downloaded from</em> to <strong>App Store and
+                                identified developers</strong>.</li>
+                        <li>After launching a blocked app once, a new
+                            "Open Anyway" button will appear in this same
+                            menu.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 2 — Remove Quarantine (if needed)</h3>
+                    <ol>
+                        <li>If macOS still blocks the app, open Terminal.</li>
+                        <li>Run: <code>xattr -cr
+                                /Applications/YourEmulator.app</code></li>
+                        <li>This removes the quarantine flag applied to
+                            downloaded files.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 3 — Download &amp; Run</h3>
+                    <ol>
+                        <li>Download the <code>.dmg</code> from the emulator's
+                            official site.</li>
+                        <li>Open the DMG and drag the <code>.app</code> to your
+                            <strong>Applications</strong> folder.</li>
+                        <li>Launch, configure controllers, and load your
+                            ROM.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-tip">
+                    Apple Silicon users: check whether the emulator has a native
+                    ARM build before defaulting to Rosetta 2, native builds are
+                    significantly faster.
+                </div>
+            </div>
+
+            <!-- Linux Panel -->
+            <div role="tabpanel" id="panel-linux" aria-labelledby="tab-linux"
+                hidden>
+                <div class="guide-section">
+                    <h3>Getting Started on Linux</h3>
+                    <p>Linux offers excellent emulator support. Most emulators
+                        are available via your distro's package manager,
+                        Flatpak, or as AppImages.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 1 — Choose Your Install Method</h3>
+                    <ul>
+                        <li><strong>Flatpak (recommended)</strong> — sandboxed,
+                            distro-agnostic, always up-to-date.</li>
+                        <li><strong>Package manager</strong> — <code>apt</code>,
+                            <code>pacman</code>, <code>dnf</code> etc. Quick but
+                            may be outdated.</li>
+                        <li><strong>AppImage</strong> — portable single-file
+                            binary, no install needed.</li>
+                    </ul>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 2 — Install via Flatpak (Example)</h3>
+                    <ol>
+                        <li>Ensure Flatpak is installed: <code>sudo apt install
+                                flatpak</code></li>
+                        <li>Add Flathub: <code>flatpak remote-add
+                                --if-not-exists flathub
+                                https://flathub.org/repo/flathub.flatpakrepo</code></li>
+                        <li>Install an emulator, e.g. RetroArch: <code>flatpak
+                                install flathub
+                                org.libretro.RetroArch</code></li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 3 — Controller &amp; Permissions</h3>
+                    <ol>
+                        <li>Most controllers work out of the box via
+                            <code>udev</code>. If not, add your user to the
+                            <code>input</code> group: <code>sudo usermod -aG
+                                input $USER</code></li>
+                        <li>Log out and back in for group changes to take
+                            effect.</li>
+                        <li>Launch the emulator and configure your input
+                            bindings.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-tip">
+                    Flatpak apps run in a sandbox. If your emulator can't see
+                    your ROMs folder, grant access with: <code>flatpak override
+                        --user --filesystem=~/ROMs org.libretro.RetroArch</code>
+                </div>
+            </div>
+
+            <!-- Steam Deck Panel -->
+            <div role="tabpanel" id="panel-steam" aria-labelledby="tab-steam"
+                hidden>
+                <div class="guide-section">
+                    <h3>Getting Started on Steam Deck</h3>
+                    <p>The Steam Deck runs a Linux-based OS (SteamOS). Emulators
+                        can be installed in <strong>Desktop Mode</strong> via
+                        the Discover store (Flatpak) or via EmuDeck, a
+                        one-click setup script.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Option A — EmuDeck (Recommended for Beginners)</h3>
+                    <ol>
+                        <li>Switch to <strong>Desktop Mode</strong>: hold the
+                            Power button → Switch to Desktop.</li>
+                        <li>Open a browser and go to
+                            <strong>emudeck.com</strong>, download the installer
+                            script.</li>
+                        <li>Run the installer — it will configure emulators,
+                            Steam ROM Manager, and controller profiles
+                            automatically.</li>
+                        <li>Copy your ROMs to the designated folders on your SD
+                            card or internal storage.</li>
+                        <li>Use Steam ROM Manager to add games to your Steam
+                            library and return to Game Mode.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Option B — Manual Flatpak Install</h3>
+                    <ol>
+                        <li>In Desktop Mode, open <strong>Discover</strong> (the
+                            shopping bag icon).</li>
+                        <li>Search for your emulator (e.g. RPCS3, Dolphin,
+                            PPSSPP).</li>
+                        <li>Install and launch from the Desktop to configure
+                            settings before returning to Game Mode.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-tip">
+                    Set the per-game performance overlay to check frame rate.
+                    Most 16-bit era games will run at full speed on default
+                    settings — only demanding systems like PS3 or GameCube may
+                    need manual tweaking.
+                </div>
+            </div>
+
+            <!-- Android Panel -->
+            <div role="tabpanel" id="panel-android"
+                aria-labelledby="tab-android" hidden>
+                <div class="guide-section">
+                    <h3>Getting Started on Android</h3>
+                    <p>Android has robust emulator support. Many excellent
+                        emulators are free on the Play Store; others are paid or
+                        require sideloading an APK.</p>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 1 — Enable Unknown Sources (for APK installs)</h3>
+                    <ol>
+                        <li>Go to <strong>Settings → Apps → Special App Access →
+                                Install Unknown Apps</strong>.</li>
+                        <li>Enable the toggle for your browser or file
+                            manager.</li>
+                        <li>This only needs to be done once for sideloaded
+                            emulators.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 2 — Download an Emulator</h3>
+                    <ul>
+                        <li><strong>Play Store</strong>: Search for emulators
+                            like <em>Delta</em>, <em>Lemuroid</em>, or
+                            <em>RetroArch</em>.</li>
+                        <li><strong>APK (sideload)</strong>: Download from the
+                            official GitHub releases page of the emulator. Avoid
+                            third-party APK mirror sites.</li>
+                    </ul>
+                </div>
+
+                <div class="guide-section">
+                    <h3>Step 3 — Add ROMs &amp; Play</h3>
+                    <ol>
+                        <li>Copy ROM files to your device via USB, cloud
+                            storage, or a local network share.</li>
+                        <li>Open the emulator and point it to your ROM
+                            directory.</li>
+                        <li>For touch controls, configure the on-screen overlay
+                            in the emulator's settings. A Bluetooth controller
+                            is strongly recommended for comfort.</li>
+                    </ol>
+                </div>
+
+                <div class="guide-tip">
+                    Pair any Bluetooth gamepad (Xbox, PlayStation, 8BitDo) for a
+                    vastly better experience. Android natively supports most
+                    modern controllers without additional apps.
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+
+        <footer>
+            <div class="taskbar" style="z-index: 5000;">
+                <button class="start-button toggle">
+                    <img src="images/start.png" /><b>Start</b>
+                </button>
+                <div class="taskbar-divider"></div>
+                <div class="tasks"></div>
+                <div class="taskbar-divider"></div>
+                <div class="tray inset-shallow">
+                    <div class="tray-icons">
+                        <img class="tray-icon"
+                            src="images/task-scheduler-16x16.png"
+                            title="Task Scheduler is not ready."
+                            onclick="showMessageBox({iconID: 'info', message: 'Good day to you!'})">
+                        <img class="tray-icon" src="images/audio-okay-16x16.png"
+                            title="Volume"
+                            onclick="showMessageBox({iconID: 'info', message: 'Have a wonderful day!'})">
+                    </div>
+                    <div class="win98-clock" id="win98-clock">00:00 AM</div>
+                    <script src="taskbar/clock.js"></script>
+                </div>
+            </div>
+        </footer>
+        <!-- Background music -->
+        <script src="js/music.js"></script>
+        <!-- Tab switcher -->
+        <script src="js/tabs.js"></script>
+    </body>
+</html>

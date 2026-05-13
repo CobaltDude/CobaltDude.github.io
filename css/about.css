@@ -1,0 +1,93 @@
+/* Page layout */
+.about-container {
+    max-width: 860px;
+    margin: 16px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Shared window sizing */
+.about-window {
+    width: 100%;
+}
+
+/* Section headings */
+.about-window .window-body h2 {
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+    color: #000080;
+    margin: 0 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #808080;
+}
+
+.about-window .window-body p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+.about-window .window-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline for emulation history */
+.timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Vertical rule down the left */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background: #808080;
+}
+
+.timeline li {
+    position: relative;
+    padding: 0 0 14px 32px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.timeline li:last-child {
+    padding-bottom: 0;
+}
+
+/* Diamond bullet on the timeline */
+.timeline li::before {
+    content: '◆';
+    position: absolute;
+    left: 2px;
+    top: 1px;
+    font-size: 0.75rem;
+    color: #000080;
+    background: #c0c0c0;
+    line-height: 1;
+}
+
+.timeline-year {
+    font-family: 'VT323', monospace;
+    font-size: 1.15rem;
+    color: #000080;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+/* Decorative pixel divider used between windows */
+.pixel-divider {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #808080;
+    letter-spacing: 2px;
+    user-select: none;
+    margin: -4px 0;
+}
